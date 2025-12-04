@@ -16,7 +16,7 @@ function calculate() {
         return;
     }
 
-    // BMR calculation
+
     let bmr;
     if (gender === "Male") {
         bmr = 10 * weightVal + 6.25 * heightVal - 5 * ageVal + 5;
@@ -38,7 +38,7 @@ function calculate() {
             <strong>Target for your goal:</strong> ${Math.round(finalCalories)} kcal/day
         </div>`;
 
-    // BMI calculation
+
     const heightM = heightVal / 100;
     const bmi = weightVal / (heightM * heightM);
     let bmiCategory = "";
@@ -64,7 +64,7 @@ function calculate() {
         <small class="info-gray">Note: BMI is a rough guide and doesn’t perfectly reflect muscle mass.</small>
     `;
 
-    // Nutrition suggestion
+    
     const proteinMin = (weightVal * 1.6).toFixed(0);
     const proteinMax = (weightVal * 2.0).toFixed(0);
 
